@@ -21,6 +21,10 @@ body {
 h1, h2 {
     text-align: center;
 }
+img.gameimg{
+    width: 75;
+    height: 75%;
+}
 img.nfl {
     width: 40%;
     height: 40%;
