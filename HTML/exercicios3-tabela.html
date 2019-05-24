@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="css/exercicio3.css">
+    <link rel="stylesheet" type="text/css" href="../css/exercicio3.css">
     <title>Football</title>
 </head>
 <body>
@@ -16,7 +16,7 @@
             <a href="#curiosidades">Curiosidades</a>
             <a href="#tabela">Tabela NFL</a>
             <figure>
-                <img src="css/images/ex3tab.jpg" class="nfl" alt="Logo NFL"/>   
+                <img src="../css/images/ex3tab.jpg" class="nfl" alt="Logo NFL"/>   
             </figure>
         </header>
         <div class="content">
@@ -26,7 +26,7 @@
             <p id="regras"><br>
                 <h1>Regras</h1>
                 <h2>O campo</h2>O campo tem 100 jardas de longitude e 53 jardas de largura (1 jarda tem 91,44 cms) . Linhas brancas demarcam o campo de 10 em 10 jardas para melhor visualização de todos. Marcas menores demarcam o campo de 1 em 1 jarda . Existe no final de cada campo uma área adicional chamada de end zone que possui 10 jardas cada . Um time marca pontos quando atravessa a end zone correndo com a bola ou quando alguém recebe a bola dentro dela .
-                <figure><img src="css/images/campofootball.png" alt="Campo Football" class="campoimg"></figure>
+                <figure><img src="../css/images/campofootball.png" alt="Campo Football" class="campoimg"></figure>
                 <h2>Tempo</h2>Os jogos da NFL tem 4 quartos de 15 minutos, com um intervalo de 12 minutos no meio do jogo . Intervalos menores de 2 minutos acontecem entre o 1o e 2o quartos e entre o 3o e 4o quartos. Os time invertem a posição de campo a cada fim de quarto .
                 O 1o e o 3o quartos começam com um kick off, isto é um chute inicial para que aconteça o retorno corrido do time adversário . Já no começo do 2o e 4o quartos o time mantêm a posse de bola do período anterior .
                 O time de ataque tem 40 segundos para começar a próxima jogada depois do fim da jogada anterior. Ele é penalizado caso não o faça .
@@ -44,13 +44,211 @@
                     <li>Comerciais de trinta segundos para o primeiro Super Bowl, em 1967, custavam meros US$ 42 mil, mas essa média ultrapassou a marca de US$ 1 milhão em 1995 e chegou ao valor recorde de US$ 4,5 milhões em 2015. Já em 2016, a CBS cobrou US$ 5 milhões pelos anúncios, ou seja, US$ 166,6 mil por segundo;</li>
                 </ol>
             </p>
-            <p>
-                <h1>Tabela</h1>
-                <table class="">
-                    <tbody>
+                <h1>Tabelas</h1>
+                <table id="tabela" colspan="8" class="tabela" align = "center">
+                    <p align = "center">V = Vitórias, D = Derrotas, E = Empates, PCT = porcentagem de vitórias, PF= Pontos feitos, PS = Pontos sofridos</p>
+                    <tbody class="tbody">
+                        <td class="region" colspan="7" align = "center">AFC Leste</td>
+                        <tr>
+                            <th>Time</th>
+                            <th>Vitórias</th>
+                            <th>Derrotas</th>
+                            <th>Empates</th>
+                            <th>PCT</th>
+                            <th>PF</th>
+                            <th>PS</th>
+                        </tr>
+                        <tr>
+                            <th>New England Patriots</th>
+                            <td>11</td>
+                            <td>5</td>
+                            <td>0</td>
+                            <td>68,8%</td>
+                            <td>436</td>
+                            <td>325</td>
+                        </tr>
+                        <tr>
+                            <th>Miami Dolphins</th>
+                            <td>7</td>
+                            <td>9</td>
+                            <td>0</td>
+                            <td>43,8%</td>
+                            <td>319</td>
+                            <td>433</td>
+                        </tr>
+                        <tr>
+                            <th>Buffalo Bills</th>
+                            <td>6</td>
+                            <td>10</td>
+                            <td>0</td>
+                            <td>37,5%</td>
+                            <td>262</td>
+                            <td>374</td>
+                        </tr>
+                        <tr>
+                            <th>New York Jets</th>
+                            <td>4</td>
+                            <td>12</td>
+                            <td>0</td>
+                            <td>25%</td>
+                            <td>333</td>
+                            <td>441</td>
+                        </tr>
                     </tbody>
                 </table>
-            </p>
+                <br>
+                <table class="tabela" colspan="8" align = "center">
+                        <tbody class="tbody">
+                            <td class="region" colspan="7" align = "center">AFC Norte</td>
+                            <tr>
+                                <th>Time</th>
+                                <th>Vitórias</th>
+                                <th>Derrotas</th>
+                                <th>Empates</th>
+                                <th>PCT</th>
+                                <th>PF</th>
+                                <th>PS</th>
+                            </tr>
+                            <tr>
+                                <th>Baltimore Ravens</th>
+                                <td>10</td>
+                                <td>6</td>
+                                <td>0</td>
+                                <td>62,5%</td>
+                                <td>389</td>
+                                <td>287</td>
+                            </tr>
+                            <tr>
+                                <th>Pittsburgh Steelers</th>
+                                <td>9</td>
+                                <td>6</td>
+                                <td>1</td>
+                                <td>59,4%</td>
+                                <td>428</td>
+                                <td>360</td>
+                            </tr>
+                            <tr>
+                                <th>Cleveland Browns</th>
+                                <td>7</td>
+                                <td>8</td>
+                                <td>1</td>
+                                <td>46,9%</td>
+                                <td>359</td>
+                                <td>392</td>
+                            </tr>
+                            <tr>
+                                <th>Cincinnati Bengals</th>
+                                <td>6</td>
+                                <td>10</td>
+                                <td>0</td>
+                                <td>37,5%</td>
+                                <td>368</td>
+                                <td>455</td>
+                            </tr>
+                        </tbody>
+                </table>
+                <br>
+                <table class="tabela" colspan="8" align = "center">
+                        <tbody class="tbody">
+                            <td class="region" colspan="7" align = "center">AFC Sul</td>
+                            <tr>
+                                <th>Time</th>
+                                <th>Vitórias</th>
+                                <th>Derrotas</th>
+                                <th>Empates</th>
+                                <th>PCT</th>
+                                <th>PF</th>
+                                <th>PS</th>
+                            </tr>
+                            <tr>
+                                <th>Houston Texans</th>
+                                <td>11</td>
+                                <td>5</td>
+                                <td>0</td>
+                                <td>68,8%</td>
+                                <td>402</td>
+                                <td>316</td>
+                            </tr>
+                            <tr>
+                                <th>Indianapolis Colts</th>
+                                <td>10</td>
+                                <td>6</td>
+                                <td>0</td>
+                                <td>62,5%</td>
+                                <td>433</td>
+                                <td>344</td>
+                            </tr>
+                            <tr>
+                                <th>Tennessee Titans</th>
+                                <td>9</td>
+                                <td>7</td>
+                                <td>0</td>
+                                <td>56,3%</td>
+                                <td>310</td>
+                                <td>303</td>
+                            </tr>
+                            <tr>
+                                <th>Jacksonville Jaguars</th>
+                                <td>5</td>
+                                <td>11</td>
+                                <td>0</td>
+                                <td>31,3%</td>
+                                <td>245</td>
+                                <td>316</td>
+                            </tr>
+                        </tbody>
+                </table>
+                <br>
+                <table class="tabela" colspan="8" align = "center">
+                        <tbody class="tbody">
+                            <td class="region" colspan="7" align = "center">AFC Oeste</td>
+                            <tr>
+                                <th>Time</th>
+                                <th>Vitórias</th>
+                                <th>Derrotas</th>
+                                <th>Empates</th>
+                                <th>PCT</th>
+                                <th>PF</th>
+                                <th>PS</th>
+                            </tr>
+                            <tr>
+                                <th>Kansas City Chiefs</th>
+                                <td>12</td>
+                                <td>4</td>
+                                <td>0</td>
+                                <td>75%</td>
+                                <td>565</td>
+                                <td>421</td>
+                            </tr>
+                            <tr>
+                                <th>Los Angeles Chargers</th>
+                                <td>12</td>
+                                <td>4</td>
+                                <td>0</td>
+                                <td>75%</td>
+                                <td>428</td>
+                                <td>421</td>
+                            </tr>
+                            <tr>
+                                <th>Denver Broncos</th>
+                                <td>6</td>
+                                <td>10</td>
+                                <td>0</td>
+                                <td>37,5%</td>
+                                <td>329</td>
+                                <td>349</td>
+                            </tr>
+                            <tr>
+                                <th>Oakland Raiders</th>
+                                <td>4</td>
+                                <td>12</td>
+                                <td>0</td>
+                                <td>25%</td>
+                                <td>290</td>
+                                <td>467</td>
+                            </tr>
+                        </tbody>
+                </table>
         </div>
     </div>
 </body>
