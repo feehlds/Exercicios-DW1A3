@@ -1,3 +1,16 @@
+.tabela{
+    width: 50%;
+}
+th {
+    background-color: tomato;
+    padding: 5px;
+}
+.region {
+    background-color: tomato;
+}
+td {
+    background-color: whitesmoke
+}
 header {
     text-align: center;
 }
