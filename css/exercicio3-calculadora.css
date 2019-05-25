@@ -1,0 +1,58 @@
+.bt{
+    text-align: center;
+    background-color: aliceblue;
+}
+.tela{
+	grid-row: 1;
+	grid-column: 1 / span 4;
+	background-color: Gainsboro;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	text-align: right;
+}
+
+.bt{
+	align-content: center;
+	background-color: aliceblue;
+}	
+
+.bt0{
+	grid-row: 6;
+	grid-column: 1 / span 2;
+	background-color: aliceblue;
+	margin-bottom: 20px;
+}
+
+.btdot{
+    background-color: aliceblue;
+    grid-row: 6;	
+	margin-bottom: 20px;
+}
+
+.btequals{
+	grid-row: 5 / span 2;
+	grid-column: 4;
+	background-color: Gray;	
+	margin-bottom: 20px;
+}
+body{
+	font-family: 'Times New Roman', Times, serif;
+    justify-content: center;
+	margin-top: 5%;
+    font-size: 25px;
+    display: grid;
+	
+}
+
+.container{
+	display: grid;
+	grid-template-rows: repeat (6, 50px);
+	grid-template-columns: repeat(4, 50px);
+    grid-gap: 10px;
+    background-color: turquoise;	
+	justify-content: center;
+	text-align: center;
+	width: 280px;
+	height: 350px;
+	
+}
