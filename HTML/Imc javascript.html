@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercício IMC JS</title>
+    <style>
+            .container #div{
+                grid-column: 1 
+            }
+            body{
+                display: grid;
+            }            
+            .imctela{
+                padding: 750px;
+                grid-column: 1 / 5;
+                grid-row: 1 / 5;
+            }
+            table{
+                border-spacing: 0;
+                border-color: azure;
+            }
+            td{
+                font-family: Arial, Helvetica, sans-serif;
+                padding: 10px;
+                background-color: whitesmoke;
+            }
+    
+    </style>
+    <script type="text/javascript">
+        function inDados() {
+            var peso = document.getElementById("peso").value;
+            var alt = document.getElementById("alt").value;
+            var imc = peso/(alt*alt)
+            var pideal = (24.9 *(alt*alt)) - peso
+
+        if(imc >= 16 && imc <17) {
+            document.getElementById("result").innerHTML = "Muito abaixo do peso"+ " " + "Seu imc: "+ " " + imc;
+        }
+        else if(imc >=17 && imc <18.5)
+        {document.getElementById("result").innerHTML = "Abaixo do peso"+ " " + "Seu imc: "+ " " + imc;
+        }
+        else if(imc >=18.5 && imc <25)
+        {document.getElementById("result").innerHTML = "Peso normal"+ " " + "Seu imc: "+ " " + imc;
+        }else if(imc >= 25 && imc < 30)
+        {document.getElementById("result").innerHTML = "Acima do peso"+ " " + "Seu imc: "+ " " + imc + " " + "Você deve emagrecer: " + pideal;
+        }else if(imc >= 30 && imc <35)
+        {document.getElementById("result").innerHTML = "Obesidade Grau I"+ " " + "Seu imc: "+ " " + imc + " " + "Você deve emagrecer: " + pideal;
+        }else if(imc >= 35 && imc <41)
+        {document.getElementById("result").innerHTML = "Obesidade Grau II" + " " + "Seu imc: "+ " " + imc + "Você deve emagrecer:" + pideal;
+        }else if(imc >= 41)
+        {document.getElementById("result").innerHTML = "Obesidade Grau III"+ " " + "Seu imc: "+ " " + imc + " " + "Você deve emagrecer: " + pideal;
+        }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+  
+        <table border="1" colspan="6">
+        <tbody>
+            <tr>
+                <td><strong>Classificação</strong></td>
+                <td><strong>IMC</strong></td>
+                <td><strong>O que pode acontecer</strong></td>
+            </tr>
+            <tr>
+                <td>Muito abaixo do peso</td>
+                <td>16 a 16,9 kg/m2</td>
+                <td>Queda de cabelo, infertilidade, ausência menstrual</td>
+            </tr>
+            <tr>
+                <td>Abaixo do peso</td>
+                <td>17 a 18,4 kg/m2</td>
+                <td>Fadiga, stress, ansiedade</td>
+            </tr>
+            <tr>
+                <td><strong>Peso normal</strong></td>
+                <td><strong>18,5 a 24,9 kg/m2</strong></td>
+                <td>Menor risco de doenças cardíacas e vasculares</td>
+            </tr>
+            <tr>
+                <td>Acima do peso</td>
+                <td>25 a 29,9 kg/m2</td>
+                <td>Fadiga, má circulação, varizes</td>
+            </tr>
+            <tr>
+                <td>Obesidade Grau I</td>
+                <td>30 a 34,9 kg/m2</td>
+                <td>Diabetes, angina, infarto, aterosclerose</td>
+            </tr>
+            <tr>
+                <td>Obesidade Grau II</td>
+                <td>35 a 40 kg/m2</td>
+                <td>Apneia do sono, falta de ar</td>
+            </tr>
+            <tr>
+                <td>Obesidade Grau III</td>
+                <td>maior que 40 kg/m2</td>
+                <td>Refluxo, dificuldade para se mover, escaras, diabetes, infarto, AVC</td>
+            </tr>
+        </tbody>
+    </table>
+    <div id="imctela">
+        <div id="imcT">
+            <p>IMC</p>
+        </div>
+        <div id="dados" align = "left">
+            <p><input type="text" name="" id="alt"> Metros de altura</p> 
+            <p><input type="text" name="" id="peso"> Kgs de massa</p> 
+            <input type="button" onclick="inDados()" value="Calcular">
+        </div>
+        <div id="result"></div>
+    </div>
+</div>
+    
+</body>
+</html>
